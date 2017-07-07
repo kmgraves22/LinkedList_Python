@@ -25,6 +25,16 @@ def main():
    list2.insert(3)
    list2.removeDups()
    list2.printList()
+   
+   print("Return Kth to last test: expected out 4")
+   list3 = LinkedList()
+   list3.insert(1)
+   list3.insert(2)
+   list3.insert(3)
+   list3.insert(4)
+   list3.insert(5)
+   temp1 = list3.returnKthtoLast(3)
+   print(temp1)
 
 if __name__ == '__main__':
    main()

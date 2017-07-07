@@ -76,6 +76,19 @@ class LinkedList(object):
          print(curr.data)
          curr = curr.next_node
       
+   #  this functions returns the kth to last element
+   #  if the kth to last element does not exist returns None
+   def returnKthtoLast(self, k):
+      size = self.size()
+      if k >= size:
+         return None
+      curr = self.head
+      index = size - k - 1
+      while index > 0:
+         curr = curr.next_node
+         index -= 1
+      return curr.data
+         
       
       
      
